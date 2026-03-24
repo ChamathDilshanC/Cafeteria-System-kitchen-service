@@ -9,7 +9,7 @@
 
 ## 📋 Overview
 
-The Kitchen Service manages all kitchen operations, including order queue management, preparation tracking, and staff coordination. Unlike other services that use MySQL, this service uses **MongoDB** for flexible, document-based storage of kitchen operations and real-time order updates.
+The Kitchen Service manages all kitchen operations, including order queue management, preparation tracking, and staff coordination. Unlike other services that use PostgreSQL, this service uses **MongoDB** for flexible, document-based storage of kitchen operations and real-time order updates.
 
 ## 🚀 Features
 
