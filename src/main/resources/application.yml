@@ -1,9 +1,5 @@
 spring:
   application:
     name: kitchen-service
-
   config:
-    import: 'configserver:http://config.platform:9000'
-
-  mongodb:
-    uri: ${SPRING_DATA_MONGODB_URI:mongodb://localhost:27017/kitchen_db}
+    import: 'configserver:http://10.148.0.6:9000'
