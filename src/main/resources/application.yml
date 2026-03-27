@@ -2,4 +2,7 @@ spring:
   application:
     name: kitchen-service
   config:
-    import: 'configserver:http://10.148.0.6:9000'
+    import: 'configserver:'
+  cloud:
+    config:
+      uri: http://config.platform:9000
