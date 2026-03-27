@@ -46,7 +46,7 @@ The Kitchen Service manages all kitchen operations, including order queue manage
 | **Database Name**       | `cafeteria_kitchen`                              |
 | **Collections**         | kitchen_orders, kitchen_queue, staff_assignments |
 | **Eureka Registration** | Yes                                              |
-| **Config Server**       | `http://localhost:8888`                          |
+| **Config Server**       | `http://localhost:9000`                          |
 
 ## 💾 MongoDB Collections
 
@@ -135,7 +135,7 @@ MongoDB is ideal for this service because:
 - Maven 3.9+
 - MongoDB 7.0
 - Port 8084 available
-- Config Server running on port 8888
+- Config Server running on port 9000
 - Service Registry running on port 8761
 
 ### MongoDB Setup
@@ -200,7 +200,7 @@ spring:
   application:
     name: kitchen-service
   config:
-    import: optional:configserver:http://localhost:8888
+    import: optional:configserver:http://localhost:9000
 
 eureka:
   client:
@@ -771,7 +771,7 @@ db.kitchen_orders.createIndex({ createdAt: 1 });
 ### Service Discovery
 
 - **Registers with**: Eureka Service Registry (8761)
-- **Fetches config from**: Config Server (8888)
+- **Fetches config from**: Config Server (9000)
 
 ## 📄 License
 
